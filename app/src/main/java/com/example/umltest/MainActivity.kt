@@ -2,6 +2,7 @@ package com.example.umltest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.design.strategypattern.MiniDuckSimulator
 import com.example.umltest.classdiagram.ClassDiagramTest
 import com.example.umltest.stereotype.MathUtility
 
@@ -23,5 +24,9 @@ class MainActivity : AppCompatActivity() {
         println("MathUtility.PI = ${MathUtility.PI}")
         println("MathUtility.sin = ${MathUtility.sin(0.3)}")
         println("MathUtility.cos = ${MathUtility.cos(0.6)}")
+
+        println("strategy pattern MiniDuckSimulator ------------------------------------")
+        val mini = MiniDuckSimulator()
+        mini.test()
     }
 }
